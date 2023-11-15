@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Portal</title>
+    <link rel="stylesheet" href="css/adoption-style.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header role="banner">
+        <h1>Pet Adoption Portal</h1>
+        <p></p>
+        <button id="theme-toggle">Toggle Theme</button>
+        <p></p>
+        <nav role="navigation">
+            <a href="index.html">Home</a>
+            <a href="travel.html">Travel</a>
+            <a href="recipes.html">Recipes</a>
+        </nav>
+        <nav>
+            <a href="adoption.html" class="active">Adoption Portal</a>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section aria-labelledby="search-section">
+            <h2 id="search-section">Find Your Perfect Companion</h2>
+            <form id="search-form">
+                <label for="search">Search: </label>
+                <input type="text" id="search" name="search" placeholder="Pet Name">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section aria-labelledby="pets-list-section">
+            <h2 id="pets-list-section">Available Pets</h2>
+            <div id="pet-list" class="pet-list">
+                <!-- Milo -->
+                <article class="pet-card" aria-labelledby="pet-name-1">
+                    <img src="images/pets/milo/milo.jpg" alt="Milo, an 8 year old white Maltese family pet" class="pet-thumbnail">
+                    <div class="pet-info">
+                        <h3 id="pet-name-1">Milo</h3>
+                        <p class="pet-description">A bashful yet warm-hearted dog, known for his charming quirks.</p>
+                        <a href="pet-profile.html?petId=1" class="pet-details-link">View Details</a>
+                    </div>
+                </article>
+                <!-- Cheeto (Chicken) -->
+                <article class="pet-card" aria-labelledby="pet-name-2">
+                    <img src="images/pets/cheeto/cheeto_cattree.jpg" alt="Cheeto, an orange cat on a cat tree" class="pet-thumbnail">
+                    <div class="pet-info">
+                        <h3 id="pet-name-2">Cheeto (Chicken)</h3>
+                        <p class="pet-description">A cat with an obsession with his grandpa and a knack for adventure.</p>
+                        <a href="pet-profile.html?petId=2" class="pet-details-link">View Details</a>
+                    </div>
+                </article>
+                <!-- Chief -->
+                <article class="pet-card" aria-labelledby="pet-name-3">
+                    <img src="images/pets/chief/chief.jpg" alt="Chief, a Pomeranian with a thoughtful expression" class="pet-thumbnail">
+                    <div class="pet-info">
+                        <h3 id="pet-name-3">Chief</h3>
+                        <p class="pet-description">A 9 year old Pomeranian who loves to sleep and enjoys walking outside.</p>
+                        <a href="pet-profile.html?petId=3" class="pet-details-link">View Details</a>
+                    </div>
+                </article>
+                <!-- Riley -->
+                <article class="pet-card" aria-labelledby="pet-name-4">
+                    <img src="images/pets/riley/riley_primary.jpg" alt="Riley, a goldendoodle with a playful demeanor" class="pet-thumbnail">
+                    <div class="pet-info">
+                        <h3 id="pet-name-4">Riley</h3>
+                        <p class="pet-description">A 2 year old goldendoodle, active and mischievous, loves attention.</p>
+                        <a href="pet-profile.html?petId=4" class="pet-details-link">View Details</a>
+                    </div>
+                </article>
+                <!-- Sofie -->
+                <article class="pet-card" aria-labelledby="pet-name-5">
+                    <img src="images/pets/sofie/sofie1.JPG" alt="Sofie, a Beagle mix with a love for the outdoors" class="pet-thumbnail">
+                    <div class="pet-info">
+                        <h3 id="pet-name-5">Sofie</h3>
+                        <p class="pet-description">A 15-year-old Beagle mix who loves long walks and the weekends for treats.</p>
+                        <a href="pet-profile.html?petId=5" class="pet-details-link">View Details</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script src="js/adoption.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
